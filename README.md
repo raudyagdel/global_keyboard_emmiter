@@ -1,7 +1,3 @@
-Here's a structured README file for both the `keyboard_emitter_app` and `keyboard_receiver_app` projects. This will help communicate the purpose, logic, and usage of each project effectively on GitHub.
-
----
-
 # keyboard_emitter_app
 
 A Flutter desktop application designed to emit global keyboard events for Windows and Linux. The app uses Dart's Foreign Function Interface (`dart:ffi`) to interact with a C/C++ library that sends keyboard input events to the operating system.
