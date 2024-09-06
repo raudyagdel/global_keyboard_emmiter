@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rbacallao\Documents\PP\keyboard_emitter_app\native\build\CMakeFiles\99e8167c5cc95df6bc0cd0b733eecfff\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9B7402F9-A5B5-395F-92D5-AA163E32AA11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\RBACALLAO\DOCUMENTS\PP\KEYBOARD_EMITTER_APP\NATIVE\BUILD\CMAKEFILES\99E8167C5CC95DF6BC0CD0B733EECFFF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/rbacallao/Documents/PP/keyboard_emitter_app/native -BC:/Users/rbacallao/Documents/PP/keyboard_emitter_app/native/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/rbacallao/Documents/PP/keyboard_emitter_app/native/build/keyboard_emitter.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
