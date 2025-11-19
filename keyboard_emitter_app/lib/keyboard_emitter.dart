@@ -14,7 +14,7 @@ class KeyboardEmitter {
     if (Platform.isWindows) {
       _lib = DynamicLibrary.open('native/keyboard_emitter.dll');
     } else if (Platform.isLinux) {
-      _lib = DynamicLibrary.open('libkeyboard_emitter.so');
+      _lib = DynamicLibrary.open('native/libkeyboard_emitter.so');
     } else {
       throw UnsupportedError('Unsupported platform');
     }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'keyboard_emitter.dart';
+import 'keys.dart';
 
 void main() {
   runApp(KeyBoardApp());
@@ -21,7 +22,7 @@ class KeyBoardApp extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {
               // Emit key 'A' (key code 65)
-              _keyboardEmitter.pressKey(65);
+              _keyboardEmitter.pressKey(Keys.A);
             },
             child: const Text('Press A Key'),
           ),

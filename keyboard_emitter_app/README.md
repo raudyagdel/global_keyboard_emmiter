@@ -5,16 +5,30 @@ A new Flutter project.
 ## Build Native Library
 
 # For Linux
-1- Install dependencies:
+1- Ensure the uinput module and device exist
+
+# load the kernel module
+sudo modprobe uinput
+
+# confirm module loaded
+lsmod | grep uinput
+
+# confirm device node
+ls -l /dev/uinput
+
+# set permission
+sudo setfacl -m u:$USER:rw /dev/uinput
+
+2- Install dependencies:
 
     ```bash
-        sudo apt-get install libuinput-dev
+        sudo apt install libinput-dev
     ```
 
  ```bash
     cd native
-    mkdir build
-    cd build
+    rm -rf build
+    mkdir build && cd build
     cmake ..
     make
 ```

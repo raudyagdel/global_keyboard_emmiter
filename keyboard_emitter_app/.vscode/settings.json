@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.dart": "dart",
+        "uinput.h": "c",
+        "keysym.h": "c",
+        "keysymdef.h": "c"
+    }
+}
