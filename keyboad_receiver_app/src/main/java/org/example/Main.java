@@ -2,11 +2,10 @@ package org.example;
 
 import com.github.kwhat.jnativehook.GlobalScreen;
 import com.github.kwhat.jnativehook.NativeHookException;
-import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
-import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
 
-public class Main {
-    public static void main(String[] args) {
+
+public class Main  {
+    public static void main(String[] args) throws NativeHookException {
 //        System.out.println("Hello World!");
         try {
             GlobalScreen.registerNativeHook();
@@ -14,13 +13,9 @@ public class Main {
             System.out.println(ex.getMessage());
         }
 
-        GlobalScreen.addNativeKeyListener(
-                new NativeKeyListener() {
-                    @Override
-                    public void nativeKeyTyped(NativeKeyEvent nativeEvent) {
-                        System.out.println("Pressed " + nativeEvent.getRawCode());
-                    }
-                }
-        );
+        KeyboardListener listener = new KeyboardListener();
+        GlobalScreen.addNativeKeyListener(listener);
+
+//        GlobalScreen.removeNativeKeyListener(listener);
     }
 }
